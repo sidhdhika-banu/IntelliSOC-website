@@ -62,7 +62,7 @@
       }
     </style>
   </head>
-  <body class="text-slate-100 font-sans antialiased">
+ <body class="text-slate-100 font-sans antialiased">
     <div class="fixed inset-0 pointer-events-none overflow-hidden">
       <div class="absolute -top-24 -left-28 w-80 h-80 bg-cyan-500/25 rounded-full blur-3xl animate-pulseGlow"></div>
       <div class="absolute top-1/4 -right-16 w-72 h-72 bg-violet-500/25 rounded-full blur-3xl animate-pulseGlow"></div>
@@ -72,7 +72,7 @@
     <header class="sticky top-0 z-40 backdrop-blur-md bg-slate-950/70 border-b border-slate-800">
       <nav class="max-w-7xl mx-auto px-4 py-4">
         <div class="flex items-center justify-between gap-4">
-          <p class="font-semibold tracking-wide text-cyan-300">IntelliSOC Research</p>
+          <p class="font-semibold tracking-wide text-cyan-300">IntelliSOC</p>
           <div class="hidden lg:flex gap-5 text-sm text-slate-300">
             <a href="#home" class="hover:text-cyan-300">Home</a>
             <a href="#about" class="hover:text-cyan-300">About</a>
@@ -100,81 +100,269 @@
     </header>
 
     <main class="relative z-10">
-      <section id="home" class="min-h-[88vh] grid-lines flex items-center">
-        <div class="max-w-7xl mx-auto px-6 py-24">
-          <p class="text-cyan-300 font-medium mb-3">AI-Enhanced Long-Term IP Behaviour Tracking</p>
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-black leading-tight max-w-5xl">IP-Based Long-Term User Behaviour Tracking and Risk Analysis System</h1>
-          <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-3xl">Intelligent Behaviour Monitoring for Advanced Threat Detection</p>
-          <p class="mt-5 text-slate-400 max-w-3xl">This showcase demonstrates how a lightweight SOC dashboard can continuously analyze user/IP activity over long time windows and transform subtle behavior changes into clear, actionable cyber risk insights.</p>
-          <div class="mt-10 flex flex-wrap gap-4">
-            <a href="#research" class="px-7 py-3 rounded-full bg-cyan-400/90 text-slate-950 font-semibold shadow-glow hover:scale-105 transition">View Research</a>
-            <a href="#screenshots" class="px-7 py-3 rounded-full border border-cyan-300/60 text-cyan-200 hover:bg-cyan-300/10 transition">Watch Demo</a>
+      <section id="home" class="min-h-[92vh] grid-lines flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute top-24 left-[12%] w-36 h-36 border border-cyan-400/20 rounded-full"></div>
+          <div class="absolute bottom-20 right-[10%] w-44 h-44 border border-violet-400/20 rounded-full"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 py-20 w-full">
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-400/40 bg-cyan-400/10 text-cyan-200 text-xs tracking-wide uppercase mb-6">
+                <span class="w-2 h-2 bg-cyan-300 rounded-full animate-pulse"></span>
+               AI-Enhanced Long-Term IP Behaviour Tracking
+              </div>
+
+              <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight max-w-3xl">
+                IntelliSOC <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-300 to-violet-300">Smarter Threat Detection Through Long-Term AI Insights</span>
+              </h1>
+              <p class="mt-6 text-lg md:text-xl text-slate-200 max-w-2xl">Intelligent Behaviour Monitoring for Advanced Threat Detection</p>
+              <p class="mt-4 text-slate-400 max-w-2xl">From low-and-slow intrusions to stealthy multi-stage attacks, IntelliSOC delivers explainable risk scoring with long-term memory so analysts can detect what traditional short-window tools miss.</p>
+
+              <div class="mt-10 flex flex-wrap gap-4">
+                <a href="#about" class="px-7 py-3 rounded-full bg-gradient-to-r from-cyan-300 to-blue-400 text-slate-950 font-semibold shadow-glow hover:scale-105 transition">View Research</a>
+                </div>
+
+              <div class="mt-10 grid grid-cols-3 gap-4 max-w-xl">
+                <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+                  <p class="text-2xl font-bold text-cyan-300">94%</p>
+                  <p class="text-xs text-slate-400">Detection Accuracy</p>
+                </div>
+                <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+                  <p class="text-2xl font-bold text-violet-300">6%</p>
+                  <p class="text-xs text-slate-400">False Positives</p>
+                </div>
+                <div class="rounded-xl border border-slate-800 bg-slate-900/70 p-4">
+                  <p class="text-2xl font-bold text-blue-300">1.8s</p>
+                  <p class="text-xs text-slate-400">Avg. Response</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="rounded-3xl border border-cyan-400/30 bg-slate-900/70 p-6 shadow-card backdrop-blur">
+                <p class="text-xs uppercase tracking-widest text-cyan-300 mb-4">Live Risk Intelligence Panel</p>
+                <div class="space-y-4">
+                  <div class="p-4 rounded-xl bg-slate-800/70 border border-slate-700">
+                    <div class="flex justify-between text-sm mb-2"><span>Suspicious IP Cluster</span><span class="text-rose-300">High</span></div>
+                    <div class="h-2 rounded-full bg-slate-700"><div class="h-2 rounded-full bg-gradient-to-r from-rose-400 to-orange-300" style="width:88%"></div></div>
+                  </div>
+                  <div class="p-4 rounded-xl bg-slate-800/70 border border-slate-700">
+                    <div class="flex justify-between text-sm mb-2"><span>Behaviour Drift Score</span><span class="text-amber-300">Medium</span></div>
+                    <div class="h-2 rounded-full bg-slate-700"><div class="h-2 rounded-full bg-gradient-to-r from-amber-300 to-yellow-200" style="width:62%"></div></div>
+                  </div>
+                  <div class="p-4 rounded-xl bg-slate-800/70 border border-slate-700">
+                    <div class="flex justify-between text-sm mb-2"><span>Analyst Confidence</span><span class="text-emerald-300">Stable</span></div>
+                    <div class="h-2 rounded-full bg-slate-700"><div class="h-2 rounded-full bg-gradient-to-r from-emerald-300 to-cyan-300" style="width:91%"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <section id="about" class="reveal max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">About the Project</h2>
-        <p class="text-cyan-300 mb-3">Hey this is About section sample content.</p>
-        <p class="text-slate-300 max-w-4xl">This final-year research project focuses on detecting suspicious IP and user behaviour that evolves slowly over time. Instead of relying only on instant alerts, the platform keeps behavioural memory and assigns changing risk levels, helping analysts catch stealthy attacks earlier and with better context.</p>
-      </section>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6">About the Project</h2>
 
-      <section id="research" class="reveal max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Research</h2>
-        <p class="text-cyan-300 mb-3">Hey this is Research section sample content.</p>
-        <p class="text-slate-300 max-w-4xl">Our research compares short-window security rules with long-term anomaly modelling. Initial findings show that combining temporal features, behaviour diversity patterns, and explainable scoring can significantly improve triage decisions for SOC teams handling progressive threats.</p>
-      </section>
+  <p class="text-cyan-300 mb-3">
+    AI-Driven Long-Term IP Behaviour Intelligence for Modern SOC Environments
+  </p>
+
+  <p class="text-slate-300 max-w-4xl">
+    This final-year research project introduces a lightweight, standalone SOC dashboard 
+    designed to detect low-and-slow cyber threats that evolve across weeks or months. 
+    Unlike traditional short-term alert systems, the platform maintains long-term 
+    behavioural memory for IP entities and applies machine learning-based anomaly 
+    detection to generate adaptive suspicion scores. By combining temporal profiling 
+    with explainable risk analysis, the system enhances early threat detection while 
+    remaining accessible and research-focused.
+  </p>
+</section>
 
       <section id="problem" class="reveal max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Problem Statement</h2>
-        <p class="text-cyan-300 mb-3">Hey this is Problem section sample content.</p>
-        <p class="text-slate-300 max-w-4xl mb-10">Security teams struggle to detect suspicious IP behaviour hidden across long timelines. Fraud attempts and low-and-slow attacks often evade short-term rules, causing delayed response and high operational risk.</p>
-        <div class="grid md:grid-cols-3 gap-6">
-          <article class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-card"><p class="text-3xl mb-3">🕵️</p><h3 class="font-semibold mb-2">Hidden Behaviour Drift</h3><p class="text-sm text-slate-400">Attackers shift tactics slowly to bypass traditional threshold-based alerts.</p></article>
-          <article class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-card"><p class="text-3xl mb-3">⚠️</p><h3 class="font-semibold mb-2">Fraud Detection Gaps</h3><p class="text-sm text-slate-400">Isolated event monitoring misses correlated malicious patterns over weeks.</p></article>
-          <article class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-card"><p class="text-3xl mb-3">📉</p><h3 class="font-semibold mb-2">Limited Long-Term Memory</h3><p class="text-sm text-slate-400">Many systems lack persistent behaviour profiles and adaptive risk scoring.</p></article>
-        </div>
-      </section>
+  <h2 class="text-3xl md:text-4xl font-bold mb-6">The Security Gap</h2>
 
-      <section id="methodology" class="reveal max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Methodology</h2>
-        <p class="text-cyan-300 mb-3">Hey this is Methodology section sample content.</p>
-        <p class="text-slate-300 max-w-4xl">The system ingests Windows and firewall logs, extracts temporal behaviour features, computes anomaly scores with lightweight ML models, and presents risk-driven alerts in a dashboard. This gives both real-time awareness and long-term behavioural context in one workflow.</p>
-      </section>
+  <p class="text-slate-300 max-w-4xl mb-10">
+    Modern SIEM and UEBA platforms such as Splunk, Microsoft Sentinel, and IBM QRadar 
+    provide powerful real-time detection capabilities. However, these enterprise-grade 
+    systems are primarily optimized for short-to-medium-term threat identification, 
+    leaving a critical gap in extended tracking of individual users or IP addresses 
+    over weeks or months.
+  </p>
 
-      <section id="solution" class="reveal max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Proposed Solution</h2>
-        <p class="text-cyan-300 mb-6">Hey this is Solution section sample content.</p>
-        <div class="grid lg:grid-cols-2 gap-6">
-          <div class="space-y-4">
-            <div class="p-5 rounded-2xl border border-cyan-400/30 bg-slate-900/70">Long-term behaviour tracking for each IP and user entity.</div>
-            <div class="p-5 rounded-2xl border border-violet-400/30 bg-slate-900/70">Dynamic risk scoring model based on temporal anomalies.</div>
-            <div class="p-5 rounded-2xl border border-blue-400/30 bg-slate-900/70">Admin dashboard for investigation and action.</div>
-            <div class="p-5 rounded-2xl border border-cyan-400/30 bg-slate-900/70">Real-time alert system with explainable anomaly factors.</div>
-          </div>
-          <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/80 shadow-card">
-            <h3 class="font-semibold mb-4">System Architecture</h3>
-            <div class="flex flex-wrap items-center gap-3 text-sm">
-              <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">User Activity</span><span>→</span>
-              <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Behaviour Analysis Engine</span><span>→</span>
-              <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Risk Score Generator</span><span>→</span>
-              <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Admin Dashboard</span><span>→</span>
-              <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Alert System</span>
-            </div>
-            <div class="mt-6 flex flex-wrap gap-2 text-xs">
-              <span class="px-2 py-1 rounded bg-cyan-500/15 border border-cyan-400/40">Frontend: HTML + Tailwind</span>
-              <span class="px-2 py-1 rounded bg-violet-500/15 border border-violet-400/40">Backend: Python/Node API</span>
-              <span class="px-2 py-1 rounded bg-blue-500/15 border border-blue-400/40">Database: TimescaleDB/MongoDB</span>
-              <span class="px-2 py-1 rounded bg-emerald-500/15 border border-emerald-400/40">ML: Isolation Forest, One-Class SVM</span>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <article class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-card">
+      <p class="text-3xl mb-3">🏢</p>
+      <h3 class="font-semibold mb-2">Enterprise-Heavy Solutions</h3>
+      <p class="text-sm text-slate-400">
+        Existing platforms are built for large-scale deployments with high-cost 
+        infrastructure, making them less accessible to smaller organizations.
+      </p>
+    </article>
+
+    <article class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-card">
+      <p class="text-3xl mb-3">⏳</p>
+      <h3 class="font-semibold mb-2">Short-Term Detection Focus</h3>
+      <p class="text-sm text-slate-400">
+        Most systems prioritize immediate alerts and event correlation rather than 
+        initiating dedicated long-term monitoring after a suspicious trigger.
+      </p>
+    </article>
+
+    <article class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70 shadow-card">
+      <p class="text-3xl mb-3">🔍</p>
+      <h3 class="font-semibold mb-2">Limited Individual Analysis</h3>
+      <p class="text-sm text-slate-400">
+        Broad analytics often overlook subtle behavioural drifts across extended 
+        timelines, allowing stealthy campaigns to evolve undetected.
+      </p>
+    </article>
+
+  </div>
+
+  <div class="mt-12 p-8 rounded-2xl border border-indigo-500/30 bg-gradient-to-r from-indigo-900/40 to-purple-900/40">
+    <h3 class="text-xl font-semibold mb-3">Why This Matters</h3>
+    <p class="text-slate-300 text-sm md:text-base">
+      There is a clear need for a lightweight, standalone SOC dashboard capable of 
+      initiating extended tracking of a specific user or IP immediately after 
+      suspicious activity is detected. By integrating AI-driven adaptive risk scoring 
+      and machine learning-based anomaly detection, such a system can bridge the gap 
+      between costly enterprise SOC platforms and the absence of affordable, 
+      long-duration behavioural monitoring solutions.
+    </p>
+  </div>
+</section>
+
+      <section id="methodology" class="reveal max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">Research Methodology</h2>
+  <p class="text-3xl-300 mb-8">Technical implementation and system architecture</p>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Data Layer -->
+    <div class="p-6 rounded-2xl border border-cyan-400/30 bg-slate-900/70 hover:scale-105 transition">
+      <p class="text-3xl mb-3">📂</p>
+      <h3 class="font-semibold mb-2">Data Layer</h3>
+      <p class="text-sm text-slate-400">
+        Windows security logs are collected using an open-source agent, normalized, 
+        enriched, and stored in a structured time-series database for long-term analysis.
+      </p>
+    </div>
+
+    <!-- Intelligence Layer -->
+    <div class="p-6 rounded-2xl border border-violet-400/30 bg-slate-900/70 hover:scale-105 transition">
+      <p class="text-3xl mb-3">🧠</p>
+      <h3 class="font-semibold mb-2">Intelligence Layer</h3>
+      <p class="text-sm text-slate-400">
+        Temporal behavioural features (7–90 day windows) are extracted and processed 
+        using Isolation Forest and One-Class SVM models to generate adaptive suspicion scores.
+      </p>
+    </div>
+
+    <!-- Visualization Layer -->
+    <div class="p-6 rounded-2xl border border-blue-400/30 bg-slate-900/70 hover:scale-105 transition">
+      <p class="text-3xl mb-3">📊</p>
+      <h3 class="font-semibold mb-2">Visualization Layer</h3>
+      <p class="text-sm text-slate-400">
+        A standalone SOC dashboard displays IP timelines, risk levels, and explainable 
+        anomaly factors for efficient investigation and alert management.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Workflow Section -->
+  <div class="mt-16">
+    <h3 class="text-2xl font-semibold mb-8">Research Workflow</h3>
+
+    <div class="grid md:grid-cols-5 gap-4 text-center text-sm">
+
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+        <p class="font-bold text-cyan-400">01</p>
+        Log Ingestion
+      </div>
+
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+        <p class="font-bold text-violet-400">02</p>
+        Feature Engineering
+      </div>
+
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+        <p class="font-bold text-blue-400">03</p>
+        ML-Based Scoring
+      </div>
+
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+        <p class="font-bold text-emerald-400">04</p>
+        Dashboard Development
+      </div>
+
+      <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+        <p class="font-bold text-pink-400">05</p>
+        Evaluation & Validation
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="solution" class="reveal max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl md:text-4xl font-bold mb-6">Proposed Solution</h2>
+
+  <div class="grid lg:grid-cols-2 gap-8">
+
+    <!-- Feature Cards -->
+    <div class="space-y-5">
+      <div class="p-6 rounded-2xl border border-cyan-400/30 bg-slate-900/70 hover:scale-105 transition">
+        🔎 Long-term behavioural tracking for each IP entity
+      </div>
+
+      <div class="p-6 rounded-2xl border border-violet-400/30 bg-slate-900/70 hover:scale-105 transition">
+        📈 Dynamic AI-based suspicion scoring model
+      </div>
+
+      <div class="p-6 rounded-2xl border border-blue-400/30 bg-slate-900/70 hover:scale-105 transition">
+        🖥️ Standalone SOC dashboard for investigation
+      </div>
+
+      <div class="p-6 rounded-2xl border border-emerald-400/30 bg-slate-900/70 hover:scale-105 transition">
+        🚨 Real-time alerts with explainable anomaly factors
+      </div>
+    </div>
+
+    <!-- Architecture Box -->
+    <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/80 shadow-card">
+      <h3 class="font-semibold mb-6 text-lg">System Flow</h3>
+
+      <div class="flex flex-wrap items-center gap-3 text-sm mb-6">
+        <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">User Activity</span>
+        <span>→</span>
+        <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Behaviour Engine</span>
+        <span>→</span>
+        <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Risk Score Generator</span>
+        <span>→</span>
+        <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">SOC Dashboard</span>
+        <span>→</span>
+        <span class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700">Alert System</span>
+      </div>
+
+      <div class="flex flex-wrap gap-2 text-xs">
+        <span class="px-3 py-1 rounded bg-cyan-500/15 border border-cyan-400/40">Frontend: HTML + Tailwind</span>
+        <span class="px-3 py-1 rounded bg-violet-500/15 border border-violet-400/40">Backend: Python API</span>
+        <span class="px-3 py-1 rounded bg-blue-500/15 border border-blue-400/40">Database: Time-Series DB</span>
+        <span class="px-3 py-1 rounded bg-emerald-500/15 border border-emerald-400/40">ML: Isolation Forest / OCSVM</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       <section id="results" class="reveal max-w-7xl mx-auto px-6 py-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Results & Performance</h2>
-        <p class="text-cyan-300 mb-6">Hey this is Results section sample content.</p>
-        <div class="grid md:grid-cols-3 gap-6">
+         <div class="grid md:grid-cols-3 gap-6">
           <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70"><p class="text-sm text-slate-400">Detection Accuracy</p><p class="text-3xl font-bold text-cyan-300">94%</p><div class="mt-3 w-full bg-slate-800 rounded-full h-2"><div class="h-2 rounded-full bg-cyan-400 progress" data-width="94%"></div></div></div>
           <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70"><p class="text-sm text-slate-400">False Positive Rate</p><p class="text-3xl font-bold text-violet-300">6%</p><div class="mt-3 w-full bg-slate-800 rounded-full h-2"><div class="h-2 rounded-full bg-violet-400 progress" data-width="6%"></div></div></div>
           <div class="p-6 rounded-2xl border border-slate-800 bg-slate-900/70"><p class="text-sm text-slate-400">Response Time</p><p class="text-3xl font-bold text-blue-300">1.8s</p><div class="mt-3 w-full bg-slate-800 rounded-full h-2"><div class="h-2 rounded-full bg-blue-400 progress" data-width="88%"></div></div></div>
@@ -183,26 +371,33 @@
 
       <section id="screenshots" class="reveal max-w-7xl mx-auto px-6 py-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Screenshots</h2>
-        <p class="text-cyan-300 mb-3">Hey this is Screenshots section sample content.</p>
-        <p class="text-slate-300 mb-8">Sample placeholders are shown below so you can quickly replace them with your real application screenshots later.</p>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="aspect-video rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 p-4 text-sm text-slate-400">Login Page Placeholder</div>
-          <div class="aspect-video rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 p-4 text-sm text-slate-400">Dashboard Placeholder</div>
-          <div class="aspect-video rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 p-4 text-sm text-slate-400">Alert Panel Placeholder</div>
-          <div class="aspect-video rounded-xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-800 p-4 text-sm text-slate-400">Risk Visualization Placeholder</div>
+         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <figure class="rounded-xl border border-slate-800 bg-slate-900/70 overflow-hidden">
+            <img src="assets/alert.jpeg" alt="IntelliSOC alert panel" class="w-full aspect-video object-cover" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="hidden p-4 text-xs text-rose-300">Image not found: assets/alert.jpeg</div>
+            <figcaption class="p-3 text-sm text-slate-300">IntelliSOC Alert Panel</figcaption>
+          </figure>
+          <figure class="rounded-xl border border-slate-800 bg-slate-900/70 overflow-hidden">
+            <img src="assets/dashboard.jpeg" alt="IntelliSOC dashboard" class="w-full aspect-video object-cover" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="hidden p-4 text-xs text-rose-300">Image not found: assets/dashboard.jpeg</div>
+            <figcaption class="p-3 text-sm text-slate-300">IntelliSOC Dashboard</figcaption>
+          </figure>
+          <figure class="rounded-xl border border-slate-800 bg-slate-900/70 overflow-hidden">
+            <img src="assets/intellibanklogin.jpeg" alt="IntelliBank login page" class="w-full aspect-video object-cover" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="hidden p-4 text-xs text-rose-300">Image not found: assets/intellibank-login.jpeg</div>
+            <figcaption class="p-3 text-sm text-slate-300">IntelliBank Login (Sample App)</figcaption>
+          </figure>
+          <figure class="rounded-xl border border-slate-800 bg-slate-900/70 overflow-hidden">
+            <img src="assets/intellibanklogout.jpeg" alt="IntelliBank logout page" class="w-full aspect-video object-cover" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+            <div class="hidden p-4 text-xs text-rose-300">Image not found: assets/intellibank-logout.jpeg</div>
+            <figcaption class="p-3 text-sm text-slate-300">IntelliBank Logout (Sample App)</figcaption>
+          </figure>
         </div>
       </section>
 
       <section id="future" class="reveal max-w-7xl mx-auto px-6 py-16">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Future Improvements</h2>
-        <p class="text-cyan-300 mb-3">Hey this is Future section sample content.</p>
-        <p class="text-slate-300 mb-8">In upcoming phases, we plan to expand this prototype into a scalable and more predictive cyber defence platform with richer data integrity and intelligence integrations.</p>
-        <ul class="grid md:grid-cols-2 gap-4 text-slate-300">
-          <li class="p-4 rounded-xl border border-slate-800 bg-slate-900/70">AI-based threat prediction and proactive defence strategies.</li>
-          <li class="p-4 rounded-xl border border-slate-800 bg-slate-900/70">Blockchain-backed log integrity verification for forensics trust.</li>
-          <li class="p-4 rounded-xl border border-slate-800 bg-slate-900/70">Cloud-native scalability with distributed processing.</li>
-          <li class="p-4 rounded-xl border border-slate-800 bg-slate-900/70">Real-time threat intelligence feed integration.</li>
-        </ul>
+        <p class="text-slate-300 mb-8">Future work could expand the system to support the ingestion and analysis of Linux-based and cloud-generated logs, thereby broadening the scope of monitored environments. Additionally, incorporating richer data enrichment sources could improve the contextual understanding of network events. Advanced explainability techniques, such as SHAP (SHapley Additive exPlanations) or LIME (Local Interpretable Model-agnostic Explanations), may also be integrated to enhance transparency and build greater trust for analysts interpreting anomaly scores and alerts.</p>
       </section>
 
       <section id="team" class="reveal max-w-7xl mx-auto px-6 py-16">
